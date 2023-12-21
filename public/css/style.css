@@ -1,0 +1,552 @@
+/* ОБЩИЕ НАСТРОЙКИ */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Klee One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1450px;
+}
+
+/* ШАПКА */
+
+.header-block{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 17px;
+}
+
+/* ЛОГОТИП */
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 47px;
+}
+
+.logo-link{
+    text-decoration: none;
+    font-family: 'Klee One';
+    color: #000000;
+}
+
+.logo-link p{
+    font-size: 36px;
+}
+
+/* ПОИСКОВАЯ СТРОКА */
+
+.header-search{
+    display: flex;
+    align-items: center;
+}
+
+.input-search{
+    width: 560px;
+    height: 40px;
+    border: 1px solid #9C9C9C;
+    outline: none;
+    padding-left: 10px;
+}
+
+.input-search::placeholder {
+    padding-left: 15px;
+    font-family: 'Klee One';
+    color: #9C9C9C;
+    font-size: 16px;
+}
+
+.button-search{
+    background-color: #FFC700;
+    border: none;
+    margin-left: 14px;
+    width: 78px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* КНОПКИ ВХОД/ДОБАВИТЬ */
+
+.header-button{
+    display: flex;
+    column-gap: 52px;
+    padding-top: 28px;
+    /* margin-right: 25px; */
+}
+
+.header-button a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-button button{
+    background-color: #FFC700;
+    border: none;
+    margin-left: 14px;
+    width: 78px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.header-button p{
+    font-family: 'Klee One';
+}
+
+/* МЕНЮ НАВИГАЦИИ */
+
+.header-nav{
+    margin-top: 125px;
+}
+
+.header-menu{
+    align-items: center;
+    column-gap: 90px;
+}
+
+.heeader-item{
+    list-style-type: none;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Klee One';
+}
+
+.header-link:hover{
+    border-bottom: 1px solid #000000;
+}
+
+.line{
+    border-top: 1px solid #000000;
+    width: 100%;
+    height: 1px;
+    margin-top: 73px;
+}
+
+/* ПОДВАЛ */
+
+.footer-first-content{
+    background-color: #9C9C9C;
+    height: 170px;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-first-item{
+    font-family: 'Klee One';
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.footer-first-item p{
+    font-family: 'Klee One';
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.footer-first-item input{
+    height: 40px;
+    width: 360px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.footer-first-item button{
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #FFC700;
+    border-radius: 30px;
+    padding: 17px;
+}
+
+.footer-latest-content{
+    background-color: #FFC700;
+    height: 360px;
+    font-family: 'Klee One';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our-motto{
+    font-size: 20px;
+}
+
+.social-media-links {
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    column-gap: 35px;
+}
+
+.social-media-links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* КОНТЕНТ СЕКЦИЯ */
+
+/* СТРАНИЦА ГЛАВНАЯ */
+
+/* РАЗДЕЛЫ САМОЕ АКТУАЛЬНОЕ/РЕЦЕПТЫ НАШИХ АВТОРОВ */
+
+.featured-content{
+    margin-top: 90px;
+}
+
+/* КАРТОЧКА НОВОСТИ */
+
+.content-title{
+    font-size: 24px;
+    font-family: 'Klee One';
+    margin-bottom: 40px;
+}
+
+
+.content-group-image {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+.content-group-image .news {
+    width: 690px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.content-group-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-group-image h3 {
+    margin-top: 12px;
+}
+
+.content-group-image p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.content-image-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* КАРТОЧКА РЕЦЕПТА АВТОРОВ */
+
+.content-author-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.image-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.content-image{
+    width: 450px;
+    height: 250px;
+}
+
+.avatar{
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.author-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.author-info p{
+    margin-left: 20px;
+}
+
+
+.image-content{
+    width: 450px;
+    height: 250px;
+}
+
+.user-icon{
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.content-author{
+    margin-top: 20px;
+    display: flex;align-items: center;
+}
+
+.content-author p{
+    margin-left: 20px;
+}
+
+.comment-textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.comment-submit-btn {
+    display: block;
+    width: 100%;
+}
+
+
+/* РЕГИСТРАЦИЯ/АВТОРИЗАЦИЯ/ДОБАВИТЬ РЕЦЕПТ/РЕДАКТИРОВАТЬ РЕЦЕПТ/РЕДАКТИРОВАТЬ ПРОФИЛЬ */
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: block;
+    font-weight: bold;
+    font-family: 'Klee One';
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFC700;
+    cursor: pointer;
+    font-family: 'Klee One';
+}
+
+.submit-btn:hover {
+    background-color: #ffe173;
+}
+
+/* СТРАНИЦА РЕЦЕПТЫ */
+/* МОДАЛЬНО ОКНО */
+
+.style-btn{
+    margin-top: 65px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-family: 'Klee One';
+}
+
+.style-modal{
+    font-family: 'Klee One';
+}
+
+/* КАРТОЧКИ РЕЦЕПТОВ */
+
+.card-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.cards-block{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.block-comment-star{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: right;
+}
+
+.block-comment-star div{
+    display: flex;
+    align-items: center;
+}
+
+/* СТРАНИЦА РЕЦЕПТА */
+
+.recipe-details{
+    font-family: 'Klee One';
+}
+
+.recipe-header{
+    margin-top: 100px;
+}
+
+.recipe-description{
+    margin-top: 30px;
+}
+
+.recipe-rating{
+    margin-top: 30px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 800px;
+}
+
+.recipe-ingredients{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-steps{
+    font-family: 'Klee One';
+}
+
+.users-recipe-comment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-comment{
+    margin: 80px 0 40px 0;
+    font-family: 'Klee One';
+}
+
+.custom-textarea{
+    outline: none;
+    padding: 10px 0 0 10px;
+    border: 1px solid #9C9C9C;
+}
+
+.comment-form{
+    margin: 40px 0;
+}
+
+.comment-form input{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFC700;
+}
+
+.comment-form input:hover{
+    background-color: #ffe173;
+}
+
+/* АДМИН(РЕЦЕПТЫ) */
+
+.action-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.delete-btn{
+    padding: 10px;
+    background-color: #FFC700;
+    border: none;
+    border-radius: 10px
+}
+
+.edit-btn{
+    padding: 10px;
+    background-color: #FFC700;
+    border: none;
+    border-radius: 10px
+}
+
+
+/* ПРОФИЛЬ */
+
+.profile-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Klee One';
+}
+
+.profile-image{
+    width: 500px;
+    height: 500px;
+}
+
+.info-item{
+    font-size: 36px;
+}
+
+.edit-button{
+    border: none;
+    border-radius: 10px;
+    background-color: #FFC700;
+    padding: 20px;
+}
+
+.edit-button:hover{
+    background-color: #ffe173;
+}
+
+.user-item{
+    margin: 100px 0 50px 0;
+    column-gap: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Klee One';
+}
+
+.user-item button{
+    padding: 20px;
+}
